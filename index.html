@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="listarVendedores(),listarProductos()">
+    <main>
+        <select id="SelectVendedor">
+            <option>Seleccione el vendedor</option>                        
+        </select>
+        <select id="SelectProductos">
+            <option>Seleccione el producto vendido</option>
+        </select>
+        <input type="text" placeholder="Cantidad de productos" id="CantVent">
+        <button type="submit" onclick="EnterSale()">Registrar Venta</button>
+        <button type="submit"onclick="RealizarCierre()">Realizar Cierre</button>
+        <section id="Caja_principal">
+            <button id="btn_option1" onclick="getHistoric()">Ver Historico de ventas</button>
+            <button id="btn_option2"onclick="getEmployeeMonth()">Empleado del mes</button>         
+            <div id="Campos"></div>
+        </section>
+
+    </main>
+    
+</body>
+</html>
