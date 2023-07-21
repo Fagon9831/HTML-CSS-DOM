@@ -74,9 +74,20 @@ function getHistoric(){
     for(let i=0;i<ArrayVendedores.length;i++){
        // var SectionMain = document.getElementById("Caja_principal")            
         div.innerHTML+=`
-        <p>Nombre: <input type='text' value='${ArrayVendedores[i]}' disabled></p>
-        <p>Ventas: <input type='text' value='${objectVendedores[ArrayVendedores[i]].Ventas}' disabled></p>
-        <p>Valor ventas: <input type='text' value='${objectVendedores[ArrayVendedores[i]].ValorVentas}' disabled></p>`;
+        <div class='input-group'>
+        <div class='input-group-prepend'>
+            <span class='input-group-text' id=''>Nombre:</span>
+        </div>
+        <input class='form-control' type='text' value='${ArrayVendedores[i]}' disabled>
+        <div class='input-group-prepend'>
+            <span class='input-group-text' id="">Cantidad Ventas:</span>
+        </div>
+        <input class='form-control' type='text' value='${objectVendedores[ArrayVendedores[i]].Ventas}' disabled>
+        <div class='input-group-prepend'>
+            <span class='input-group-text' id=''>Valor ventas:</span>
+        </div>
+        <input class='form-control' type='text' value='${objectVendedores[ArrayVendedores[i]].ValorVentas}' disabled>
+        </div>`;
     }
     document.querySelector("#Campos").appendChild(div);
 }
@@ -99,8 +110,20 @@ function getEmployeeMonth(){
     }    
     //SectionMain = document.getElementById("Caja_principal")    
     document.getElementById("Campos").innerHTML=""
-    div.innerHTML=`<p id="nameF">Nombre: <input type='text' value='${ArrayVendedores[i]}' disabled></p>
-    <p>Ventas: <input type='text' value='${objectVendedores[ArrayVendedores[i]].Ventas}' disabled></p>
-    <p>Valor ventas: <input type='text' value='${objectVendedores[ArrayVendedores[i]].ValorVentas}' disabled></p>`;       
+    div.innerHTML=`
+    <div class='input-group'>
+    <div class='input-group-prepend'>
+        <span class='input-group-text' id=''>Nombre:</span>
+    </div>
+    <input class='form-control' type='text' value='${ArrayVendedores[i]}' disabled>
+    <div class='input-group-prepend'>
+        <span class='input-group-text' id="">Cantidad Ventas:</span>
+    </div>
+    <input class='form-control' type='text' value='${objectVendedores[ArrayVendedores[i]].Ventas}' disabled>
+    <div class='input-group-prepend'>
+        <span class='input-group-text' id=''>Valor ventas:</span>
+    </div>
+    <input class='form-control' type='text' value='${objectVendedores[ArrayVendedores[i]].ValorVentas}' disabled>
+    </div>`;
     document.querySelector("#Campos").appendChild(div);   
 }

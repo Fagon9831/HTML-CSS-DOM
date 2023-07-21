@@ -1,3 +1,20 @@
 #Caja_principal button{
     visibility: hidden;
 }
+body{
+background-image: url("./images/fondo.jpg");
+background-repeat: no-repeat;
+background-size: cover;}
+main{
+  background-color: rgba(204, 201, 201, 0.301);
+  border-radius: 15px;
+  height: 87vh;  
+  margin:3%;
+}
+h1{
+    color: white!important;
+    font-size: 50px!important;
+    font-weight: 600!important;
+    -webkit-text-stroke: 1.5px black;    
+
+}

@@ -1,0 +1,22 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "init",
+  "main": "script.js",
+  "scripts": {
+    "test": "git status"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fagon9831/HTML-CSS-DOM.git"
+  },
+  "author": "Fagon9831",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fagon9831/HTML-CSS-DOM/issues"
+  },
+  "homepage": "https://github.com/Fagon9831/HTML-CSS-DOM#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  }
+}
